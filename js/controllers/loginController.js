@@ -1,10 +1,10 @@
 /**
  * Created by yemi-t on 29/06/2014.
  */
-app.controller('loginController', function($scope){
+app.controller('loginController', ['$scope', '$location', function($scope, $location){
  $scope.signin = function($scope)
  {
-     alert("login");
- }
-});
+     $location.path('/events');
+ };
+}]);
 

@@ -5,6 +5,7 @@ var app = angular.module('AngBoot', ['ngRoute']);
 
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/login', {templateUrl: './partials/login.html', controller: 'loginController'});
+    $routeProvider.when('/events', {templateUrl: './partials/events.html', controller: 'loginController'});
 
     $routeProvider.otherwise({redirectTo: '/login'});
 }]);
